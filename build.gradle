@@ -1,0 +1,36 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+mainClassName = 'org.example.Main' // Change if your main class is different
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Selenium WebDriver
+	implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+
+	// WebDriverManager for automatic driver management
+	implementation 'io.github.bonigarcia:webdrivermanager:5.5.0'
+
+	// JUnit for testing
+	testImplementation 'junit:junit:4.13.2'
+}
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+application {
+	// Entry point
+	mainClass = 'org.example.Main'
+}
