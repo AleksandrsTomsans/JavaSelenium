@@ -44,7 +44,8 @@ public class Main {
 
 
           int total_MenuSections = 8;
-
+          
+          //   1st for loop over top menu sections
           for (int loop_1st = 1; loop_1st < total_MenuSections;      loop_1st++)
           {
                String menuElement = driver.getTitle();
@@ -62,7 +63,7 @@ public class Main {
                } else {
                     println("loop_2nd");
                     
-                    
+                    //   2nd loop over pages for each menu sections
                     for (int pageNumber = 1; ;pageNumber++)
                     {
                          String URL = driver.getCurrentUrl();
