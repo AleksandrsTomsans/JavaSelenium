@@ -112,7 +112,7 @@ public class Main {
                          try {
                               press(driver, xpath.NEXT_PAGE);
                          } catch (Exception e) {
-                              break;  // exit loop
+                              break;  // exit 3rd loop
                          }
                     }
 
