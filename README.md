@@ -28,7 +28,7 @@ A **Java Selenium automation project** that scans a website to identify **missin
 * **Selenium WebDriver**
 * **WebDriverManager**
 * **ChromeDriver**
-* **Maven / IntelliJ (recommended)**
+
 
 ## Project Structure
 
